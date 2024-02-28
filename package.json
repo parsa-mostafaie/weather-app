@@ -1,0 +1,11 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/tailwind_out.css --watch"
+  },
+  "author": "Parsa Mostafaie",
+  "license": "MIT"
+}
