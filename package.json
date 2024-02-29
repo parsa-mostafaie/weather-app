@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/tailwind_out.css --watch"
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/tailwind_out.css --watch --minify"
   },
   "author": "Parsa Mostafaie",
   "license": "MIT"
