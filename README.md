@@ -16,16 +16,16 @@ This is a simple weather app that fetches weather data from the Visual Crossing 
 ## API Used
 - Visual Crossing Weather API
 
-## How to Use
+## ❓ How to Use
 1. Select a city from the dropdown list.
 2. Select a language from the dropdown list.
 3. Select a day from the dropdown list to view weather data for that day.
 4. The app will display the weather information including sunrise, sunset, hourly data, and current time zone.
 
-## How to Run
+## ❓ How to Run
 Simply open the index.html file in a web browser to run the app.
 
-## Credits
+## © Credits
 This app was created by <b>Parsa Mostafaie</b>.
 
 Feel free to contribute or provide feedback!
