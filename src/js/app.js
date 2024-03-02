@@ -17,7 +17,7 @@ city_inp.addEventListener("change", () => {
 
 let data = null;
 
-let item_classlist = "bg-gray-700 rounded-md p-5 flex flex-col text-center";
+let item_classlist = "witem";
 
 function fetchData() {
   data = fetch(
@@ -57,10 +57,10 @@ function renderAhour(prev, hour, isnow = false) {
 
 function renderAday(day, currentConditions, CurrentTime) {
   container.innerHTML =
-    `<b class='${item_classlist} text-gray-900'>Sunrise: ${day.sunrise}</b>` +
-    `<b class='${item_classlist} text-gray-900'>Sunset: ${day.sunset}</b>` +
+    `<b class='${item_classlist} spec-text'>Sunrise: ${day.sunrise}</b>` +
+    `<b class='${item_classlist} spec-text'>Sunset: ${day.sunset}</b>` +
     (CurrentTime
-      ? `<b class='${item_classlist} text-gray-900'>Current Time Zone: ${currentConditions.datetime}</b>` +
+      ? `<b class='${item_classlist} spec-text'>Current Time Zone: ${currentConditions.datetime}</b>` +
         renderAhour("", currentConditions, true)
       : "") +
     day.hours.reduce(renderAhour, "");
