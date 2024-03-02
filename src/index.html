@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEATHER APP</title>
     <script>
-      window.history.pushState(null, "WHEATER APP", "/");
+      let root = location.hostname.includes("github") ? "/weather-app/" : "/";
+
+      window.history.pushState(null, "WHEATER APP", root);
     </script>
 
     <link rel="stylesheet" href="src/css/tailwind_out.css" />

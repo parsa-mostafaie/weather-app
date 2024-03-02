@@ -6,9 +6,10 @@
     <title>WEATHER APP</title>
   </head>
   <body>
-    <script>
+    <script type="module">
+      let root = location.hostname.includes("github") ? "/weather-app/" : "/";
       // redirect
-      location.href = "src/";
+      location.href = root + "src/";
     </script>
   </body>
 </html>
