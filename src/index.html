@@ -13,26 +13,26 @@
     <link rel="stylesheet" href="src/css/tailwind_out.css" />
   </head>
   <body>
-    <div class="container mx-auto p-2">
+    <div class="container mx-auto p-2 space-y-5">
       <input
         type="text"
         name="city"
         id="city"
         placeholder="City"
-        class="textbox"
+        class="textbox max-w-[100%]"
       />
-      <select name="lang" id="lang" class="select">
+      <select name="lang" id="lang" class="select max-w-[100%]">
         <option value="en">English</option>
         <option value="fa">Farsi</option>
         <option value="ar">Arabic</option>
       </select>
-      <select name="wday" id="wday" class="select">
+      <select name="wday" id="wday" class="select max-w-[100%]">
         <option value="0">Today</option>
         <option value="1">Tomorrow</option>
         <option value="2">Two more days</option>
         <option value="3">Three more days</option>
       </select>
-      <button class="btn-primary" onclick="fetchData()">Fetch Data</button>
+      <button class="btn-primary max-w-[100%]" onclick="fetchData()">Fetch Data</button>
     </div>
 
     <div class="container mx-auto p-2" id="container">
