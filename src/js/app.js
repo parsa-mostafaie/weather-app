@@ -123,11 +123,18 @@ function init_swiper() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    slidesPerView: 5,
-    spaceBetween: 15,
+    slidesPerView: 2,
+    spaceBetween: 5,
     breakpoints: {
+      400: {
+        spaceBetween: 15,
+        slidesPerView:3
+      },
+      673: {
+        slidesPerView: 5,
+      },
       // when window width is >= 992px
-      992: {
+      1024: {
         slidesPerView: 7,
         spaceBetween: 25,
       },
