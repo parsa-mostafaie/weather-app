@@ -17,7 +17,7 @@ city_inp.addEventListener("change", () => {
 
 let data = null;
 
-let item_classlist = "witem";
+let item_classlist = "swiper-slide witem";
 
 function fetchData() {
   data = fetch(
