@@ -10,6 +10,7 @@
 
 @layer components {
   .witem {
+    align-items: center;
     @apply bg-gray-700 rounded-md p-5 flex flex-col text-center;
   }
   .spec-text {
