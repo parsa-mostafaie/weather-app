@@ -11,9 +11,17 @@
     </script>
 
     <link rel="stylesheet" href="src/css/tailwind_out.css" />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <div class="container mx-auto p-2 space-y-5">
+    <header class="container mx-auto p-2 space-y-5">
       <input
         type="text"
         name="city"
@@ -29,8 +37,28 @@
       <button class="btn-primary max-w-[100%]" onclick="fetchData()">
         Fetch Data
       </button>
+    </header>
+
+    <div
+      class="swiper bg-white text-white container mx-auto mt-5 p-[0.25rem_!important] rounded"
+      style="--swiper-navigation-size: 25px"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+        <div class="swiper-slide witem">1</div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
 
-    <script src="src/js/app.js"></script>
+    <script src="src/js/app.js" defer></script>
   </body>
 </html>

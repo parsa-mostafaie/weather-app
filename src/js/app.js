@@ -35,3 +35,24 @@ function fetchData() {
       console.error(err);
     });
 }
+
+// swiper
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  centeredSlides: true,
+  slidesPerView: 5,
+  spaceBetween: 15,
+  breakpoints: {
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 7,
+      centeredSlides: true,
+      initialSlide: 1,
+      spaceBetween: 25,
+    },
+  },
+  loop: true,
+});
