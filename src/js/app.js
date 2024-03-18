@@ -7,6 +7,7 @@ let time_inp = $.querySelector("#time");
 let lang_inp = $.getElementById("lang");
 let city_inp = $.getElementById("city");
 let swiper;
+let err = $.querySelector("error");
 
 let city = "";
 let lang = "en";
@@ -45,9 +46,14 @@ function fetchData() {
       init_swiper();
       swiper.slideTo(1);
       swiper.slidePrev();
+      city_inp.value = city = json.resolvedAddress;
+      err.textContent = "";
+      err.classList.remove("p-2");
     })
-    .catch((err) => {
-      console.error(err);
+    .catch((e) => {
+      err.textContent = e instanceof SyntaxError ? "Invalid City" : e;
+      swip.style.display = "none";
+      err.classList.add("p-2");
     });
 }
 
