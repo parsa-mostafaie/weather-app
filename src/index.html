@@ -26,22 +26,10 @@
         <option value="fa">Farsi</option>
         <option value="ar">Arabic</option>
       </select>
-      <select name="wday" id="wday" class="select max-w-[100%]">
-        <option value="0">Today</option>
-        <option value="1">Tomorrow</option>
-        <option value="2">Two more days</option>
-        <option value="3">Three more days</option>
-      </select>
       <button class="btn-primary max-w-[100%]" onclick="fetchData()">Fetch Data</button>
     </div>
 
-    <div class="container mx-auto p-2" id="container">
-      <div id="city_name" class="dark:text-white"></div>
-      <div
-        class="grid text-white select-none gap-2"
-        style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
-      ></div>
-    </div>
+    
     <script src="src/js/app.js"></script>
   </body>
 </html>
