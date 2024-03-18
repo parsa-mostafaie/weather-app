@@ -48,12 +48,12 @@ function fetchData() {
       swiper.slidePrev();
       city_inp.value = city = json.resolvedAddress;
       err.textContent = "";
-      err.classList.remove("p-2");
+      err.classList.add('hidden');
     })
     .catch((e) => {
       err.textContent = e instanceof SyntaxError ? "Invalid City" : e;
       swip.style.display = "none";
-      err.classList.add("p-2");
+      err.classList.remove("hidden");
     });
 }
 
@@ -128,7 +128,7 @@ function init_swiper() {
     breakpoints: {
       400: {
         spaceBetween: 15,
-        slidesPerView:3
+        slidesPerView: 3,
       },
       673: {
         slidesPerView: 5,
