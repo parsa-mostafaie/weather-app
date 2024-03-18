@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEATHER APP</title>
+    <title>Wheater App</title>
     <script>
       let root = location.hostname.includes("github") ? "/weather-app/" : "/";
 
-      window.history.pushState(null, "WHEATER APP", root);
+      window.history.pushState(null, "Wheater App", root);
     </script>
 
     <link rel="stylesheet" href="src/css/tailwind_out.css" />
@@ -26,10 +26,11 @@
         <option value="fa">Farsi</option>
         <option value="ar">Arabic</option>
       </select>
-      <button class="btn-primary max-w-[100%]" onclick="fetchData()">Fetch Data</button>
+      <button class="btn-primary max-w-[100%]" onclick="fetchData()">
+        Fetch Data
+      </button>
     </div>
 
-    
     <script src="src/js/app.js"></script>
   </body>
 </html>
